@@ -1,0 +1,28 @@
+header, footer, section, aside {
+	background: gray;
+	border: 1px solid black;
+}
+
+section, aside {
+	height: 500px;
+
+	
+}
+
+section{
+	margin:0 20px 0 0;
+	flex: 2;
+}
+
+section:hover{
+background:orange;
+}
+
+header, footer{
+	height: 100px;
+}
+
+#container {
+	margin: 20px;
+	display:flex
+}

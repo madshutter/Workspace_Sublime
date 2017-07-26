@@ -1,0 +1,21 @@
+h1{
+  background: red;
+  padding:5px 10px;
+  border: 10px solid black;
+  /*color:blue;*/
+
+}
+
+p {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: 3px dotted orange;
+}
+
+code {
+  background:white;
+  color: black;
+  padding: 2px;
+  border: 1px solid red;
+}

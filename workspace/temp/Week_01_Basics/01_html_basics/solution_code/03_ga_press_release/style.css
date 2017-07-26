@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(green, white); 
+  background-repeat:no-repeat;
+  /*background:#FFFFFF;*/
+}
+/* CSS comment here.... */
+p:nth-of-type(2) {
+  color: orange;
+}
+li:nth-of-type(odd){
+  background:gray;
+}
+h1{
+  color: blue;
+  text-decoration: underline;
+}
+
+li {
+  color: green;
+}

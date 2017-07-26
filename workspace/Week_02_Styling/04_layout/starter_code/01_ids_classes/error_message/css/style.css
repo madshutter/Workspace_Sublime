@@ -1,0 +1,24 @@
+h1 {
+ font-family: 'Open Sans', sans-serif; /* uses Google Font */
+ font-size:36px;
+ font-weight:800;
+ font-style:italic;
+}
+#notification {
+ color:red;
+}
+.heavy {
+ font-weight:bold;
+ text-decoration:underline;
+}
+.message {
+ color:blue;
+ font-weight:bold;
+}
+.error {
+  color:red;
+}
+
+.success {
+	color:green;
+}

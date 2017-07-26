@@ -1,0 +1,68 @@
+<!--
+
+Your challenge with this code-along is to adjust the width of the `p` to ensure that the gray box (its content + padding + border + margin) always takes up 400px of space on the page.  In other words, prevent it from extending beyond the black box)
+
+You should end up with 3 separate CSS rules, each targeting "p" separately, a different rule for each challenge
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  #container {
+  width:400px;
+  background:black;
+  }
+
+  p {
+    background:gray;
+    height:50px;
+    width:400px; /* don't change this value here, adjust it in the rules below */
+  }
+
+  div {
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  /* CHALLENGE #1
+  In the following rule,
+  the padding should be set to 20px
+  */
+  p {
+    
+  }
+
+  /* CHALLENGE #2
+  In the following rule,
+  the padding should be set to 20px
+  and the border should be set to 5px
+  */
+
+  p {
+
+  }
+
+  /* CHALLENGE #3
+  In the following rule,
+  there should be 20px of padding
+  the border should be 5px
+  there should be a 5px margin on the left and right, and 10px margin on the top and bottom
+  */
+
+  p {
+
+  }
+
+  </style>
+</head>
+<body>
+  <section>
+    <p></p>
+  </section>
+  <div id="container">
+    <p>Welcome to the box model!</p>
+  </div>
+</body>
+</html>

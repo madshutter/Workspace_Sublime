@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>CSS Inheritance & Cascade Challenge</title>
+  <link rel="stylesheet" href="reset.css">
+  <!-- don't worry about this for now, we'll get to it soon! -->
+</head>
+	<style>
+	  /*  THIS IS YOUR CHALLENGE (AND A MASSIVE CSS COMMENT!) 
+
+	  	FOR EACH OF THE FOLLOWING QUESTIONS, WHICH OF THE FOLLOWING POSSIBLE REASONS (EITHER INHERITANCE OR RELATING TO THE CASCADE) IS THE BEST EXPLANATION FOR WHAT YOU ARE SEEING RENDERED IN THE BROWSER?
+
+	  	Possible reasons:
+	  	-----------------
+
+	  	inheritance
+	  	importance (relates to cascade)
+	  	source order (relates to cascade)
+	  	specificity (relates to cascade)
+	  	origin (relates to cascade)
+
+	  	------------------------------
+
+	  	1. In the first rule, a declaration for the font-family property is made, with the <body> element as the selector.  Why do the paragraphs also appear as sans-serif?
+
+	  	inheritance
+
+	  	2. Why does the h1 tag appear red and not blue?
+
+			source order
+
+	  	3. Why are the h2 tags orange, and not green? 
+
+			importance
+
+	  	4. Why are the <span> tags in the paragraphs <p>, appearing green and not blue?
+
+			specificity
+
+	  	5. Why is the last <span> larger font than the rest? 
+			
+			origin (author/inline)
+	  	*/
+
+	  body {
+	    font-family: sans-serif;
+	    padding: 5px;
+	  }
+
+	  h1 {
+	    color: blue;
+	  }
+
+	  h1 {
+	    font-size: 24px;
+	    font-weight: bold;
+	    color: red;
+	  }
+
+	  h2 {
+	    color: orange!important;
+	  }
+
+	  h2 {
+	    color: green;
+	  }
+
+	  p span {
+	    color: green;
+	    font-size: 16px;
+	  }
+
+	  p {
+	    color: blue;
+	  }
+	</style>
+
+	<body>
+	  <h1>CSS Cascade & Inheritance challenge </h1>
+
+	  <h2>Paragraph 1</h2>
+	  <p>
+	    <span>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+	    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	  </p>
+	  <h2>Paragraph 2</h2>
+	  <p>
+	    <span>It was popularised</span> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of <span style="font-size:19px;">Lorem Ipsum.</span>
+	  </p>
+
+
+	</body>
+
+</html>

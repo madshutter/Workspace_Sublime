@@ -1,0 +1,85 @@
+<!--
+This exercise is geared towards helping you practice nested selectors - using CSS to target elements inside of other elements
+
+The second part has you build on this, to get a feel for how block vs. inline vs. inline-block elements behave differenty
+
+******************************************
+
+Warm up
+
+	let's start with some basic styling together in the body, and then go ahead and "fill in the blanks" for the next three rules
+
+Part 1 - Nested selectors
+
+	in style.css, add CSS rules so that:
+
+		1. paragraphs appearing inside of blockquotes (but not paragraphs appearing outside of blockquotes) appear in italics (hint: look up font-style)
+
+		2. emphasized text, that is inside of a paragraph that is inside of a blockquote, does not appear in italics and does appear bold
+
+
+Part 2 - Block vs. Inline vs. Inline-block
+
+		1. <p> is a block element.  Add css declarations to the rule currently selecting <p> elements on your page that do the following
+
+		- adds 5px margin top
+		- adds 10px margin left
+		- adds 3px padding top
+		- adds 10px padding left
+		- try giving it width
+		- try giving it a height
+
+
+		2. <em> is an inline element.  Add the same declarations above (one at a time, and refresh in between) to the rule selecting the <em>s on the page, and see how it behaves different than the <p>
+
+		3.  Now, create a new rule at the very bottom of your CSS file that sets all <em>s to "display: inline-block".  What do you see?
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Nested Selectors - CodePen</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  	<style>
+  		blockquote p {
+  			font-style: italic;
+  		}
+
+
+  		blockquote p em  {
+  			font-weight:bold;
+  			color: red;
+  		}
+
+  		em {
+  			color: blue;
+  		}
+  	</style>
+</head>
+
+<body>
+
+  <h1>Nested Selectors in CSS</h1>
+
+	<p>Often, we may find ourselves wanting to style things <em>differently</em> depending on their <em>context</em>.</p>
+
+	<p>Take emphasis as an example. In typical copy, presented in a roman (non-italic) type, we may wish to add <em>emphasis</em> to a word or phrase by using <em>italics</em>.</p>
+
+	<p>But what if we want to quote a block of text which also emphasizes something?</p>
+
+	<blockquote>
+  		<p>This is a quote from some famous person who undoubtedly has something <em>very important</em> to say.</p>
+	</blockquote>
+
+	<p>If we want our block quote to be set in italics by default, then the visual style for emphasis needs to be different, <em>but only when inside a blockquote</em>.</p>
+
+	<p>This is where <em>nested selectors</em> come in handy.</p>
+
+</body>
+
+</html>

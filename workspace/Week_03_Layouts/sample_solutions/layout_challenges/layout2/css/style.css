@@ -1,0 +1,70 @@
+header, section, aside, footer {
+  border: 1px solid black;
+}
+div {
+  display: grid;
+  grid-template-columns: 100px 500px 100px;
+  grid-template-rows: 100px 400px 100px;
+  grid-template-areas:"a a a"
+                      "b c d"
+                      "e e e"
+}
+header {
+  grid-area: a;
+  /*grid-column: 1/4;*/
+}
+section#left {
+  grid-area: b; 
+}
+
+section#center{
+grid-area: c;
+}
+aside {
+  grid-area: d;
+}
+footer {
+  grid-area: e;
+}
+
+header {
+  align-items: center;
+  background-image: url('../bg.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-size:contain;*/
+  /*border: 2px solid black;*/
+}
+
+section, ul, header {
+  justify-content: space-around;
+  display: flex;
+}
+
+header h1 {
+  flex: 1;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+/* playing with nested grids  
+
+#left { 
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 50px 50px;
+  grid-template-areas: "a b";
+
+}*/
+
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+nav {
+  flex: 1;
+}

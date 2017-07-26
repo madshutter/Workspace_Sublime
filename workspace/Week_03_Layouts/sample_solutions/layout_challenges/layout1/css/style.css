@@ -1,0 +1,68 @@
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 500px 200px;
+  grid-template-areas:  "a"
+                        "b"
+                        "c"
+}
+
+header {
+  grid-area :a;
+}
+
+section {
+  grid-area: b;
+}
+
+footer {
+  grid-area: c;
+  border: 2px solid black;
+}
+
+header {
+  align-items: center;
+	height: 200px;
+	background-image: url('../bg.jpg');
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+  /*background-size:contain;*/
+  /*border: 2px solid black;*/
+}
+
+section, ul, header {
+  justify-content: space-around;
+  display: flex;
+}
+
+header h1 {
+  flex: 1; /* defines how this element grows, in relation to its siblings, to fill up available space in their parent container */
+}
+
+header nav ul {
+  list-style-type: none;
+}
+nav {
+  flex: 1; /* defines how this element grows, in relation to its siblings, to fill up available space in their parent container */
+}
+section div {
+  flex: 1; /* defines how this element grows, in relation to its siblings, to fill up available space in their parent container */
+  /*height: 500px;*/
+  border:1px solid black;
+ /* width: 500px; *//* inclusive of padding and border when using box-sizing: border-box */
+  padding: 10px;
+  margin:20px;
+}
+
+#primary {
+  flex: 2; /* defines how this element grows, in relation to its siblings, to fill up available space in their parent container.  This element will grow twice as quickly */
+}

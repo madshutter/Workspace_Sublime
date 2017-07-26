@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ids and Classes</title>
+  <style>
+    body {
+      background: grey;
+    }
+
+    div {
+      width: 200px;
+      height: 100px;
+      background: white;
+    }
+
+    .border{
+      border: 5px dotted orange;
+    }
+
+    .round {
+      border-radius: 100px; 
+      width: 100px;
+    }
+
+    div:not(.border){
+      border-radius: 100px
+      width: 100px;
+    }
+
+
+    #box1 {
+      background: green;
+
+    }
+
+    #box2 {
+      background: blue;
+    }
+
+
+
+  </style>
+</head>
+
+  <!--
+  1. use an element selector to make the background of <body> gray
+  1. use an element selector to
+    - make all <div>s 200px x 100px (width x height)
+    - make all <div>s have a default background color of white
+  2. assign an id of "box1" to one <div>
+  3. assign an id of "box2" to another one
+  4. using a class, make exactly two <div>s have a 5px dotted border that is orange
+  5. utilizing the id you've created, make #box1 have a green background
+  6. utilizing the id you've created, make #box2 have a blue background
+
+  BONUS:
+  - Assign the <div>s that are not part of the "box" class, to be part of the "round" class
+  - Create a .round rule that uses border-radius: and width: to make them appear as circles
+  - Now, achieve the same effect by targeting those <div>s using the :not selector, instead of the .round class
+  -->
+
+
+</head>
+
+<body>
+
+  <div id="box1" class="round">
+  </div>
+
+  <div id="box2" class="round">
+  </div>
+
+  <div class=border>
+  </div>
+
+  <div class=border>
+  </div>
+
+</body>
+
+</html>

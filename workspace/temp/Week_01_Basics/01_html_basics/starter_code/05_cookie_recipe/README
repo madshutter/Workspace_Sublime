@@ -1,0 +1,19 @@
+You have come across your grandma's recipe for chocolate chip cookies…but there is a problem!  The recipe has no structure or styling!
+
+Your task, for the rest of class, is to:
+
+- Use HTML tags to add structure (use whatever tags you think are best!)
+- Use CSS to add style to achieve the desired look described below
+
+Cookie Recipe CSS
+=================
+
+Colors
+------
+
+We're using the following colors on this page:
+
+* The background color for the page is #FFE
+* The color for the text reading "Related Recipes" is #887
+* The link color is #900
+* Bonus: The border on the page and around the image is black

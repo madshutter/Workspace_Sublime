@@ -1,0 +1,45 @@
+
+body {
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 100px 300px 150px 100px;
+
+	grid-template-areas: "a a"
+						 "b c"
+						 "d d"
+						 "e e";
+	grid-gap: 20px;
+
+}
+
+header {
+	background: blue;
+	grid-area: a;
+}
+section#left {
+	grid-area: b;
+	background: orange;
+}
+
+section#right {
+	grid-area: c;
+	background: yellow;
+}
+
+div {
+	grid-area: d;
+	background:gray;
+	display: flex;
+	justify-content: space-between;
+}
+
+aside {
+	border: 1px solid black;
+	/*flex: 1;*/
+	width: 30%;
+	background: red
+}
+footer {
+	grid-area: e;
+	background: green;
+}

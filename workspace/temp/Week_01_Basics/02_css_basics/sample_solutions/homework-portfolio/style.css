@@ -1,0 +1,17 @@
+ 
+   img {
+      border: 3px dotted black;
+      padding: 55px;
+      margin:20px;
+      width: 50px;
+      float:right;
+    }
+    p {
+      padding: 100px 0;
+    }
+    h1 {
+      /*margin: 30px;*/
+    }
+    footer{
+      clear:both;
+    }
