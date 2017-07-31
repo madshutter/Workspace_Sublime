@@ -1,0 +1,99 @@
+/*header, aside, section, footer{
+	border: 1px solid black;
+}
+
+div {
+	display: grid;
+	grid-template-columns: 100px 500px 100px;
+	grid-template-rows: 100px 400px 100px;
+	grid-template-areas: "a a a"
+						 "b c d"
+						 "e e e"	 
+}
+
+header {
+	grid-area: a;
+	grid-column: 1/4;
+}	
+
+section#left {
+	grid-area: b;
+	grid-row: 1/3;
+}		
+
+section#center { 
+	grid-area c;
+	grid-row: 1/3;
+}
+
+section#right {
+	grid-area d;
+	grid-row: 1/3;
+}
+
+footer {
+	grid-area e;
+	grid-column: 1/4;
+}		
+
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+	color: white;
+}
+/*header{
+	align-items: center;
+	height: 300px;
+	border: 2px solid black;
+	background-image: url('images/bg.jpg');
+	background-size: contain;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-around;
+}*/
+section, header, ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*nav{
+	width: 400px;
+}
+*/
+/*header nav ul {
+	list-style-type: none;
+}*/
+/*section div{
+	width: 50px;
+	padding: 10px;
+	margin: 20px;
+	flex: 3;
+}*/
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+
+/*h2{
+	font-family: 'Roboto', sans-serif, bold;
+	
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+#primary {
+	flex: 2;
+}
+
+*/
